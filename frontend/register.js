@@ -1,6 +1,6 @@
 
 
-function reg() {
+function register() {
   alert("Registered successfully")
 
   setTimeout(() => {

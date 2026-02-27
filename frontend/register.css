@@ -80,7 +80,7 @@ button {
 
 @media screen and (min-width: 0px) and (max-width: 768px) {
   .div {
-    width: 250px;
+    width: 330px;
   }
 
   input{
@@ -88,7 +88,7 @@ button {
   }
 
   .main{
-    height: 577px;
+    height: 600px;
    
   }
   

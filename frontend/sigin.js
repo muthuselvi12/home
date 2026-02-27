@@ -1,5 +1,5 @@
 function butt() {
-  alert("Registered successfully")
+  alert("WELCOME TO KUMARIII")
 
   setTimeout(() => {
     window.location.href = "index.html";
