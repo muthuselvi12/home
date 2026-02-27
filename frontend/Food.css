@@ -1,0 +1,422 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* hero section */
+
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 15px;
+  /* color: rgba(0, 0, 0, 0.781); */
+}
+
+.navbar ul {
+  list-style-type: none;
+}
+
+.checking {
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+.navbar li {
+  display: inline-block;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.navbar li:hover {
+  color: rgba(82, 79, 79, 0.669);
+}
+
+.navbar,
+a,
+li {
+  color: rgb(239, 239, 239);
+  font-weight: bold;
+}
+
+.headbg {
+  background-image: url("../assets/foodbg.jpg");
+  background-position: center;
+  background-size: cover;
+  /* background-color: rgba(0, 0, 0, 0.361);
+  background-blend-mode: darken; */
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 605px;
+  /* position: relative; */
+}
+
+header {
+  text-align: center;
+  margin: 20px;
+  padding: 50px;
+}
+
+.wel {
+  font-size: 30px;
+  margin-bottom: 30px;
+  color: rgb(255, 255, 255);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  /* position: absolute;
+  top: 45%;
+  left: 45%; */
+}
+
+.headletter {
+  font-size: 60px;
+  /* font-weight: bold; */
+
+  color: rgba(255, 255, 255, 0.42);
+}
+
+.leaf {
+  color: rgb(47, 148, 47);
+}
+
+.but {
+  margin: 20px;
+  padding: 6px 25px;
+  font-size: 20px;
+  background-color: rgb(240, 248, 255);
+  outline: 0;
+  border-color: rgba(255, 0, 0, 0.116);
+  border-radius: 20px;
+  /* color: blue;  */
+}
+
+/* about food */
+
+.home-town {
+  font-size: 15px;
+  text-align: center;
+}
+
+.well {
+  font-size: 30px;
+  color: rgb(0, 0, 0);
+  font-family: cursive;
+  text-align: center;
+  margin-bottom: 20px;
+  /* padding-top: 25px; */
+}
+
+/* gallery */
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  gap: 15px;
+}
+
+.pic {
+  width: 250px;
+  height: 260px;
+  width: 250px;
+  height: 260px;
+  position: relative;
+  border-radius: 50px 10px 10px 10px;
+  overflow: hidden; /* important */
+}
+
+.pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.place-name {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  background: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  padding: 8px;
+  display: none; /* hide initially */
+}
+
+.gal {
+  text-align: center;
+  margin: 20px;
+  font-size: 30px;
+  font-family: cursive;
+}
+
+/* last */
+.last {
+  background-color: black;
+  height: 200px;
+  padding: 10px;
+  text-align: center;
+  margin-top: 20px;
+}
+.end {
+  text-align: center;
+  margin: 20px;
+  /* padding-top: 25px; */
+  font-size: 20px;
+  color: aliceblue;
+}
+
+.last p {
+  margin: 20px 0px;
+}
+
+.foot {
+  padding-right: 5px;
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  /* hero section */
+
+  .navbar {
+    padding: 8px;
+    text-align: center;
+    align-items: center;
+    font-size: 25px;
+    justify-content: space-between;
+  }
+
+  .navbar h1 {
+    font-size: 20px;
+  }
+
+  .navbar ul {
+    display: none;
+  }
+  .checking {
+    display: block;
+  }
+
+  #check:checked ~ ul {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 70px;
+    left: 0px;
+    width: 100%;
+    background-color: rgb(48, 119, 48);
+    align-items: center;
+  }
+
+  .navbar a {
+    text-decoration: none;
+  }
+
+  .navbar li {
+    padding: 6px 8px;
+    font-size: 13px;
+    display: block;
+  }
+
+  header {
+    padding: 20px 15px;
+    margin: 10px;
+  }
+
+  .headletter {
+    font-size: 28px;
+  }
+
+  .headbg {
+    height: 250px;
+  }
+  .wel {
+    font-size: 20px;
+  }
+
+  .home-town {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+
+  .but {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 18px;
+    min-height: 48px;
+    width: 150px;
+  }
+
+  /* gallery */
+
+  .gallery {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding: 10px;
+  }
+
+  .pic {
+    width: 100%;
+    max-width: 300px;
+    height: 240px;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .pic:hover img {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  }
+
+  .gal {
+    font-size: 24px;
+    margin: 15px 10px;
+  }
+
+  /* last */
+  .last {
+    height: 150px;
+    padding: 15px;
+    margin-top: 15px;
+  }
+
+  .end {
+    font-size: 18px;
+    margin: 15px;
+  }
+
+  .last p {
+    margin: 15px 0;
+    font-size: 16px;
+  }
+
+  .foot {
+    padding-right: 8px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  /* hero section */
+
+  .navbar {
+    padding: 8px;
+    text-align: center;
+    align-items: center;
+    font-size: 25px;
+    justify-content: space-between;
+  }
+
+  .navbar h1 {
+    font-size: 40px;
+  }
+
+  .navbar ul {
+    display: none;
+  }
+  .checking {
+    display: block;
+  }
+
+  #check:checked ~ ul {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 70px;
+    left: 4px;
+    width: 100%;
+    background-color: rgb(48, 119, 48);
+    align-items: center;
+  }
+
+  .navbar a {
+    text-decoration: none;
+  }
+
+  .navbar li {
+    padding: 6px 8px;
+    font-size: 13px;
+    display: block;
+  }
+
+  header {
+    padding: 40px 30px;
+  }
+
+  .headletter {
+    font-size: 48px;
+  }
+
+  .headbg{
+    height: 300px;
+  }
+
+  .home-town {
+    font-size: 15px;
+    padding: 0 15px;
+  }
+
+  .but{
+    margin: 18px;
+    padding: 12px 25px;
+    font-size: 20px;
+    border-radius: 20px;
+    min-height: 52px;
+    width: 150px;
+  }
+
+  /* gallery */
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .pic:hover img {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+  }
+
+  .gallery {
+    gap: 18px;
+    padding: 20px;
+    flex-direction: row;
+  }
+
+  .pic {
+    width: 280px;
+    height: 280px;
+  }
+
+  .gal {
+    font-size: 28px;
+    margin: 20px 0;
+  }
+
+  /* last */
+
+  .last {
+    height: 180px;
+    padding: 18px;
+    margin-top: 18px;
+  }
+
+  .end {
+    font-size: 20px;
+    margin: 20px;
+  }
+
+  .last p {
+    margin: 20px 0;
+    font-size: 17px;
+  }
+
+  .foot {
+    padding-right: 10px;
+  }
+}

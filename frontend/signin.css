@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+input {
+  width: 300px;
+  height: 30px;
+  outline: 0;
+  border: 0;
+  /* border-radius: 5px; */
+  /* border-color: aliceblue; */
+  border-bottom: 1px solid white;
+  background-color: rgba(240, 248, 255, 0);
+  margin: 20px;
+}
+
+label {
+  font-size: 18px;
+  color: white;
+}
+
+h1 {
+  margin: 0;
+  text-align: center;
+  padding: 20px;
+  color: white;
+}
+
+.div {
+  border: 1px solid rgba(255, 255, 255, 0.112);
+  border-radius: 10px;
+  background-color: rgba(240, 248, 255, 0.219);
+  padding: 20px;
+  margin: 30px;
+  height: 400px;
+}
+.content {
+  justify-content: center;
+  display: flex;
+}
+.gap {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  /* color: blue; */
+}
+
+.gap a {
+  text-decoration: none;
+}
+
+.send {
+  display: flex;
+  justify-content: center;
+  padding: 6px;
+}
+
+button {
+  padding: 10px 25px;
+  border: 1px solid green;
+  background-color: green;
+  color: white;
+  border-radius: 5px;
+  margin: 20px;
+  font-size: 15px;
+}
+.bg {
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.gap {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  /* color: blue; */
+}
+
+.gap a {
+  text-decoration: none;
+}
+
+
+.main {
+  background-image: url("../assets/bgtemp.jpg");
+  background-position: center;
+  background-size: cover;
+  /* background-color: rgba(0, 0, 0, 0.338); */
+  background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .div {
+    width: 250px;
+  }
+
+  .main{
+    height: 577px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  
+   .div {
+    width: 400px;
+  }
+
+  .bg {
+    height: 525px;
+  }
+}
