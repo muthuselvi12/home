@@ -1,7 +1,5 @@
-
-
 function register() {
-  alert("Registered successfully")
+  alert("Registered successfully");
 
   setTimeout(() => {
     window.location.href = "signin.html";
