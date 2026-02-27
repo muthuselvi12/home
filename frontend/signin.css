@@ -84,7 +84,7 @@ button {
 
 
 .main {
-  background-image: url("../assets/bgtemp.jpg");
+  background-image: url("../frontend/assets/bgtemp.jpg");
   background-position: center;
   background-size: cover;
   /* background-color: rgba(0, 0, 0, 0.338); */
